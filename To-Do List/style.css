@@ -1,0 +1,100 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(45deg, #d2001a,#7462ff,#fc0c04);
+    background-size: 300% 300%;
+    animation: color 14s ease-in-out infinite;
+}
+@keyframes color{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.container{
+    max-width: 600px;
+    background-color: whitesmoke;
+    padding: 10px 30px 20px;
+    margin: 200px auto;
+    border-radius: 15px;
+}
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
+form{
+    margin: 25px 0px 20px;
+}
+form input{
+    width: 80%;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 5px solid rgb(2, 2, 214);
+    font-size: 1.3rem;
+    margin-left: 14px;
+}
+#btn{
+    padding: 15px 20px;
+    margin-left: 10px;
+    background-color: rgb(2, 2, 214);
+    color: whitesmoke;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 15px;
+}
+ul li{
+    list-style: none;
+    font-size: 1.4rem;
+    padding: 20px 28px;
+    margin-left: 25px;
+    position: relative;
+    cursor: pointer;
+}
+ul li::before{
+    content: "☐";
+    font-size: 1.3rem;
+    position: absolute;
+    left: -1px;
+    top: 18px;
+}
+ul li.checked{
+    list-style: none;
+    font-size: 1.4rem;
+    padding: 20px 28px;
+    margin-left: 25px;
+    position: relative;
+    color: #ff0140;
+    cursor: pointer;
+}
+ul li.checked::before{
+    content: "☑";
+    font-size: 1.3rem;
+    position: absolute;
+    left: -1px;
+    top: 18px;
+    color: #ff0140;
+}
+
+span{
+    color: #FF003F;
+    font-size: 1.8rem;
+    position: absolute;
+    right: 40px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: rgb(34, 34, 251);
+}
